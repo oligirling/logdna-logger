@@ -39,7 +39,11 @@ Firstly you need to add your details to the logger. The following places need ad
 
 To use this logger just bring the class in:
 ```javascript
-const Logger = require('./Logger')
+const logDnaLogger = require('./Logger')
+```
+And create the object - passing in a [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object
+```javascript
+const logger = new logDnaLogger(request)
 ```
 You can add custom meta params using the method:
 ```javascript
