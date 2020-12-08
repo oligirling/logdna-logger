@@ -71,6 +71,17 @@ This will post all the logs up in one batch with the meta you have added.
 
 This has been tested using CloudFlare Workers and is working well.
 
+### Screenshots in LogDna
+
+Below is a screenshot of how a log entry from this logger shows up in LogDNA, with a bunch of custom meta added using `setMeta()` (eg output, endpoint etc)
+
+<img width="973" alt="Screenshot 2020-12-08 at 09 31 36" src="https://user-images.githubusercontent.com/42932986/101472061-fb7e1880-393f-11eb-992d-4f49f9074741.png">
+
+
+Using the custom meta sent from the logger, you can create graphs and other visual tools. See below:
+
+<img width="1068" alt="Screenshot 2020-12-08 at 09 31 03" src="https://user-images.githubusercontent.com/42932986/101472538-a1318780-3940-11eb-8d9a-c6dea3e73ca5.png">  
+
 ### Examples
 
 Cloudflare worker example:
